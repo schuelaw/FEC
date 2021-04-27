@@ -1,37 +1,55 @@
-## Welcome to GitHub Pages
+## [Federal Election Commission](https://www.fec.gov/)
+Its mission statement as given on the commission website is: *The FEC was created to promote confidence and participation in the democratic process. Read more about the FEC’s history, purpose and goals.*
 
-You can use the [editor on GitHub](https://github.com/schuelaw/FEC/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### FEC Data
+As part of that mission, the FEC collects data about contributions to all
+candidates in federal elections. Here we explore the FEC data on
+individual contributions to Joe Biden and Donald Trump during the two year
+period from Jan 1, 2019 through Dec 31, 2020. That data is available for
+download from the FEC's [bulk data page](https://www.fec.gov/data/browse-data/?tab=bulk-data).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The "[Contributions by individuals
+2019-2020](https://www.fec.gov/files/bulk-downloads/2020/indiv20.zip)" is
+the primary data source for the analyses presented here.
 
-### Markdown
+### Challenges with FEC Data
+There are several challenges to overcome when working with this data. We
+summarize them here.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* The uncompressed individual contributions dataset is around 18Gb. We use
+  python with pandas to process this dataset, but it must be done in
+  chunks as our available computing power is not capable of loading the
+  entire dataset at once.
 
-```markdown
-Syntax highlighted code block
+* The individual contributions are linked to "Committee IDs". One must
+  refer to the separate "Candidate-committee linkages" dataset to link
+  Committee IDs to Candidate IDs. Then, one must refer to the "Candidate
+  Master" to link candidate names to Candidate IDs. Through this chain, we
+  were able to identify individual contributions to Biden and Trump.
 
-# Header 1
-## Header 2
-### Header 3
+* The [WinRed](https://winred.com/) problem. WinRed is a centralized
+  fundraising aggregator for Republican candidates nationwide. Individual
+  contributors can go to the WinRed site and donate to any Republican
+  candidate. WinRed then transfers those donations to the designated
+  candidate's official committee. 
 
-- Bulleted
-- List
+  When it reports to the FEC, WinRed doesn't disaggregate the individual
+  contributions so they appear as several multi-million dollar
+  contributions. 
 
-1. Numbered
-2. List
+  Fortunately, for this project, the non-profit, investigative journalism
+  organization, [ProPublica](https://www.propublica.org/), has mined
+  WinRed's public reports and disaggregated those contributions back to 
+  individual donors. The disaggregated data is by state, so some work is
+  necessary to download and merge the data into a single national dataset
+  like the FEC data. (get [ProPublica year-end WinRed data](https://projects.propublica.org/itemizer/committee/C00694323/2020))
 
-**Bold** and _Italic_ and `Code` text
+* Multiple Committee IDs in the FEC are associated with both Biden and
+  Trump. To determine which Committee IDs are associated with which
+  candidate, we found a list of the top funded Committee IDs and looked at
+  the Committee Names to determine whether they supported Biden or Trump.
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/schuelaw/FEC/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and weâ€™ll help you sort it out.
