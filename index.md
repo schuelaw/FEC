@@ -16,6 +16,10 @@ The "[Contributions by individuals
 2019-2020](https://www.fec.gov/files/bulk-downloads/2020/indiv20.zip)" is
 the primary data source for the analyses presented here.
 
+### Analyses
+
+* [Individual Contributions to Biden and Trump](individual_contributions.md).
+
 ### Challenges with FEC Data
 
 There are several challenges to overcome when working with this data. We
