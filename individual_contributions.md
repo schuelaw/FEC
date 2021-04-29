@@ -16,18 +16,18 @@ steps.
 
 	* WinRed:
 
-	  Committee                                                                              |      Earnings
-	  ---------------------------------------------------------------------------------------|-----------------
-	  Earmarked for TRUMP MAKE AMERICA GREAT AGAIN COMMITTEE (C00618371)                     |      1.03825e+08 
-	  Refund of Earmarked Contribution                                                       |      3.89842e+07 
-	  Earmarked for DONALD J. TRUMP FOR PRESIDENT, INC. (C00580100)                          |      3.30368e+07 
-	  Earmarked for GEORGIANS FOR KELLY LOEFFLER (C00729608)                                 |      3.21226e+07 
-	  Earmarked for PERDUE FOR SENATE (C00547570)                                            |      2.93174e+07 
-	  Earmarked for NRSC (C00027466)                                                         |      2.47305e+07 
-	  Earmarked for REPUBLICAN NATIONAL COMMITTEE (C00003418)                                |      1.67951e+07 
-	  Earmarked for NRCC (C00075820)                                                         |      1.45478e+07 
-	  Earmarked for SENATE GEORGIA BATTLEGROUND FUND (C00736967)                             |      1.27943e+07 
-	  Earmarked for MCCONNELL SENATE COMMITTEE (C00193342)                                   |      6.48096e+06 
-	  Earmarked for ELISE FOR CONGRESS (C00547893)                                           |      2.37567e+06 
-	  Earmarked for NATIONAL VICTORY ACTION FUND (C00760124)                                 |      2.10694e+06 
-	  Earmarked for KEVIN MCCARTHY FOR CONGRESS (C00420935)                                  |      1.30704e+06 
+	  Committee                                                                              |Earnings (USD, millions)
+	  ---------------------------------------------------------------------------------------|------------------------
+	  Earmarked for TRUMP MAKE AMERICA GREAT AGAIN COMMITTEE (C00618371)                     |      103.825 
+	  Refund of Earmarked Contribution                                                       |      38.9842 
+	  Earmarked for DONALD J. TRUMP FOR PRESIDENT, INC. (C00580100)                          |      33.0368 
+	  Earmarked for GEORGIANS FOR KELLY LOEFFLER (C00729608)                                 |      32.1226 
+	  Earmarked for PERDUE FOR SENATE (C00547570)                                            |      29.3174 
+	  Earmarked for NRSC (C00027466)                                                         |      24.7305 
+	  Earmarked for REPUBLICAN NATIONAL COMMITTEE (C00003418)                                |      16.7951 
+	  Earmarked for NRCC (C00075820)                                                         |      14.5478 
+	  Earmarked for SENATE GEORGIA BATTLEGROUND FUND (C00736967)                             |      12.7943 
+	  Earmarked for MCCONNELL SENATE COMMITTEE (C00193342)                                   |      6.48096 
+	  Earmarked for ELISE FOR CONGRESS (C00547893)                                           |      2.37567 
+	  Earmarked for NATIONAL VICTORY ACTION FUND (C00760124)                                 |      2.10694 
+	  Earmarked for KEVIN MCCARTHY FOR CONGRESS (C00420935)                                  |      1.30704 
